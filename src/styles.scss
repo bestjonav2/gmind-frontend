@@ -1,1 +1,111 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@200;400;600&display=swap");
+@import "vars";
+
+:host {
+  font-family: $main-font;
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  font-family: $main-font;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 0;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.content {
+  display: flex;
+  margin: 82px auto 32px;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-padding {
+  padding-left: 164px;
+  padding-right: 164px;
+}
+
+.link {
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: 1px solid $accent-color;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  vertical-align: baseline;
+  text-align: center;
+  margin: 0;
+  margin-right: 0px;
+  min-width: 150px;
+  line-height: 36px;
+  padding: 0 16px;
+  overflow: visible;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 20px;
+
+  &.btn-accent {
+    background-color: $accent-color;
+    color: #000;
+  }
+
+  &.btn-block {
+    width: 100%;
+  }
+}
+
+.cs50 {
+  width: 50%;
+  height: auto;
+}
+
+.m-toolbar {
+  margin-top: 90px;
+}
+
+.al-bottom {
+  position: absolute;
+  bottom: 10px;
+}

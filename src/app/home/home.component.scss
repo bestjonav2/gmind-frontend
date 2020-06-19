@@ -1,0 +1,36 @@
+@import "../../vars";
+.bg-l-side,
+.bg-r-side {
+  width: 50%;
+  height: 100vh;
+  font-size: 40px;
+
+  div {
+    margin-top: 90px;
+    padding-left: 164px;
+    width: 100%;
+  }
+
+  input[type="button"] {
+    position: relative;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+  }
+}
+.bg-r-side {
+  background: $black-bg;
+  border-radius: 50px 0 0 50px;
+}
+.main-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-25%, -50%);
+  background: url("../../assets/counting_stars.svg");
+  height: 500px;
+  width: 700px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

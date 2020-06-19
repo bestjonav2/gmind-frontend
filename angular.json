@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "gmind"
+    }
+  },
+  "defaultProject": "gmind",
+  "cli": {
+    "analytics": "025f249b-220c-4943-982d-1952178d32d2"
+  }
 }
