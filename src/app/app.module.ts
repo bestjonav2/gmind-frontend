@@ -7,13 +7,17 @@ import { ToolbarComponent } from './shared/toolbar/toolbar.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HomeComponent } from './home/home.component';
 import { GetStartedComponent } from './get-started/get-started.component';
+import { ShareComponent } from './share/share.component';
+import { HelpComponent } from './help/help.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     HomeComponent,
-    GetStartedComponent
+    GetStartedComponent,
+    ShareComponent,
+    HelpComponent
   ],
   imports: [
     BrowserModule,
