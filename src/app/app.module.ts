@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { GetStartedComponent } from './get-started/get-started.component';
 import { ShareComponent } from './share/share.component';
 import { HelpComponent } from './help/help.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HelpComponent } from './help/help.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
