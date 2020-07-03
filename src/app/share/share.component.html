@@ -1,3 +1,35 @@
-<div class="container-padding m-toolbar" fxLayout="row" role="main">
-  <p>share works</p>
+<div class="modal-header">
+  <h4 class="modal-title col-10 offset-1">Hey! Glad you are here</h4>
+  <button
+    type="button"
+    class="close"
+    aria-label="Close"
+    (click)="activeModal.dismiss('Cross click')"
+  >
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <form class="col-10 offset-1">
+    <div class="form-group">
+      <label for="title">Insert a title to make finding your post easier:</label>
+      <input ngbAutoFocus id="shTitle" class="form-control" name="title" />
+    </div>
+    <div class="form-group">
+      <label for="message">Write about your feelings, let yourself go:</label>
+      <textarea id="shMessage" class="form-control" rows="9" name="message"></textarea>
+    </div>
+  </form>
+</div>
+<div class="modal-footer">
+  <button
+    type="button"
+    class="btn btn-outline-danger"
+    (click)="activeModal.close('Close click')"
+  >
+    Cancel
+  </button>
+  <button type="button" class="btn btn-outline-success" (click)="submitMsg()">
+    Submit
+  </button>
 </div>

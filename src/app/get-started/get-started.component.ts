@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { ShareComponent } from '../share/share.component';
 
 @Component({
   selector: 'app-get-started',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GetStartedComponent implements OnInit {
 
-  constructor() { }
+  constructor(private modalService: NgbModal) { }
 
   ngOnInit(): void {
+  }
+
+  open() {
+    const modalRef = this.modalService.open(ShareComponent, { size: 'lg', centered: true, scrollable: true });
+    modalRef.componentInstance.name = "test";
   }
 
 }

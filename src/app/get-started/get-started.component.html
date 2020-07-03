@@ -1,65 +1,78 @@
-<div class="container-padding m-toolbar" fxLayout="row" role="main">
-  <div class="cs50" fxLayout="column" fxLayoutAlign="center center">
+<div class="m-toolbar container">
+  <div class="row">
     <div
-      class="gs-card"
+      class="col-md-6 col-sm-12"
       fxLayout="column"
-      fxLayoutAlign="start center"
-      fxLayoutGap="15px"
+      fxLayoutAlign="center center"
     >
-      <div class="sp-img"></div>
-      <div>
-        <h3>Spread positivism and help people like you</h3>
-        <blockquote>
-          Raise your words, not your voice. It is rain that grows flowers, not
-          thunder.
-          <footer>
-            —
-            <cite>Rumi</cite>
-          </footer>
-        </blockquote>
-        <br />
-        <p>
-          Your words are more powerfull than you think, they are life-changing.
-          Use them wisely.
-        </p>
+      <div
+        class="gs-card"
+        fxLayout="column"
+        fxLayoutAlign="start center"
+        fxLayoutGap="15px"
+      >
+        <img class="c-img" src="../../assets/spread_love.svg" />
+        <div>
+          <h3>Spread positivism and help people like you</h3>
+          <blockquote>
+            <p>
+              Raise your words, not your voice. It is rain that grows flowers,
+              not thunder. Use them wisely.
+            </p>
+            <footer>
+              —
+              <cite>Rumi</cite>
+            </footer>
+          </blockquote>
+          <p>
+            Your words are more powerfull than you think, they are
+            life-changing.
+          </p>
+        </div>
+        <input
+          routerLink="/help"
+          type="button"
+          class="btn btn-accent al-bottom"
+          value="Spread love"
+        />
       </div>
-      <input
-        routerLink="/help"
-        type="button"
-        class="btn btn-accent al-bottom"
-        value="Spread love"
-      />
     </div>
-  </div>
-  <div class="cs50" fxLayout="column" fxLayoutAlign="center center">
     <div
-      class="gs-card"
+      class="col-md-6 col-sm-12"
       fxLayout="column"
-      fxLayoutAlign="start center"
-      fxLayoutGap="15px"
+      fxLayoutAlign="center center"
     >
-      <div class="gw-img"></div>
-      <div>
-        <h3>Share your feelings and find the words you need</h3>
-        <blockquote>
-          When we can talk about our feelings, they become less overwhelming,
-          less upsetting, and less scary.
-          <footer>
-            —
-            <cite>Fred Rogers</cite>
-          </footer>
-        </blockquote>
-        <p>
-          Emotions are what make us humans and talking about them is the first
-          step to feel better.
-        </p>
+      <div
+        class="gs-card"
+        fxLayout="column"
+        fxLayoutAlign="start center"
+        fxLayoutGap="15px"
+      >
+        <img class="c-img" src="../../assets/reading.svg" />
+        <div>
+          <h3>Share your feelings and find the words you need</h3>
+          <blockquote>
+            <p>
+              When we can talk about our feelings, they become less
+              overwhelming, less upsetting, and less scary.
+            </p>
+            <footer>
+              —
+              <cite>Fred Rogers</cite>
+            </footer>
+          </blockquote>
+          <p>
+            Emotions are what make us humans and talking about them is the first
+            step to feel better.
+          </p>
+        </div>
+        <input
+          type="button"
+          class="btn btn-accent al-bottom"
+          value="Share your feelings"
+          (click)="open()"
+        />
       </div>
-      <input
-        routerLink="/share"
-        type="button"
-        class="btn btn-accent al-bottom"
-        value="Share your feelings"
-      />
     </div>
   </div>
 </div>
