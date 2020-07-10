@@ -58,6 +58,10 @@ p {
   &:hover {
     border-bottom: 1px solid $accent-color;
   }
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .btn {
@@ -110,8 +114,14 @@ p {
   bottom: 10px;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 /* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";

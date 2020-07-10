@@ -1,3 +1,53 @@
-<div class="container-padding m-toolbar" fxLayout="row" role="main">
-  <p>help works</p>
+<div class="container-padding m-toolbar" fxLayout="column" role="main">
+  <h3>You can help this user!</h3>
+  <div id="fe-card" class="card card-shadow w-100 mb-5">
+    <div class="card-body">
+      <h5>Title test</h5>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+        voluptas cum exercitationem, enim doloribus numquam, hic esse, molestiae
+        et laudantium harum praesentium. Ad, odit qui necessitatibus sit
+        voluptatum deleniti laborum. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Recusandae, exercitationem modi vel inventore ea vitae
+        necessitatibus iste iusto maiores natus rem minima rerum voluptas!
+        Provident sequi cupiditate ducimus explicabo ipsum.
+      </p>
+    </div>
+  </div>
+  <div class="w-100">
+    <div class="form">
+      <div class="form-group">
+        <h3 for="gMsg">Share your encouraging words</h3>
+        <textarea
+          id="hMessage"
+          name="hMsg"
+          rows="5"
+          class="form-control"
+          placeholder="Write your text here..."
+        ></textarea>
+      </div>
+      <div class="form-group d-flex flex-row justify-content-end">
+        <!-- <button
+          type="button"
+          class="btn btn-circle btn-outline-danger"
+        >
+          !
+        </button> -->
+        <button type="button" class="btn btn-outline-info mr-2">
+          Skip
+        </button>
+        <button type="button" class="btn btn-outline-success mr-2">
+          Send words
+        </button>
+      </div>
+      <div class="form-group">
+        <p>
+          <ngb-alert [dismissible]="false">
+            <strong>Warning!</strong> Review your message before sending it. The
+            message can't be changed in the future.
+          </ngb-alert>
+        </p>
+      </div>
+    </div>
+  </div>
 </div>

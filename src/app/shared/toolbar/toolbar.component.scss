@@ -15,6 +15,10 @@
   .title {
     font-size: 36px;
     font-weight: 400;
+
+    &:focus {
+      outline: none;
+    }
   }
 
   .nav-items {
